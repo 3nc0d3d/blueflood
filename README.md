@@ -36,18 +36,18 @@ python3 l2ping_flooder.py <BLUETOOTH_MAC_ADDRESS> [-p <NUMBER_OF_PROCESSES>]
 - <BLUETOOTH_MAC_ADDRESS>: The Bluetooth MAC address of the target device (e.g., 00:11:22:33:44:55). Required.
 - -p, --processes: The number of l2ping processes to run concurrently. Defaults to 100.
 
-# Example:
+## Example:
 
 ```
 python3 l2ping_flooder.py 00:11:22:33:44:55 -p 200
 ```
 This command will launch an l2ping flood attack against the Bluetooth MAC address 00:11:22:33:44:55 using 200 concurrent processes.
 
-# Stopping the Script
+## Stopping the Script
 The script can be stopped by pressing Ctrl+C.
 
 
-# Important Considerations
+## Important Considerations
 - **Ethical Use**: Only use this script on networks you own or have explicit permission to test. Unauthorized use is illegal and unethical.
 - **Impact**: This script can disrupt network connectivity for the target device and potentially other devices on the same Bluetooth network. Use with caution.
 - **Detection**: This type of attack is easily detectable by Bluetooth network monitoring tools.
