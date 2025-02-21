@@ -21,16 +21,17 @@ The script allows you to specify the target Bluetooth MAC address and the number
 ## Installation
 
 1. Clone this repository:
-   ```bash
-   git clone [https://github.com/](https://github.com/)[your-github-username]/l2ping-flooder-bluetooth.git
-   cd l2ping-flooder-bluetooth
-2. (Optional, but recommended) Create a virtual environment:
+```bash
+git clone [https://github.com/](https://github.com/)[your-github-username]/l2ping-flooder-bluetooth.git
+cd l2ping-flooder-bluetooth
 ```
+2. (Optional, but recommended) Create a virtual environment:
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 ## Usage
-```
+```bash
 python3 l2ping_flooder.py <BLUETOOTH_MAC_ADDRESS> [-p <NUMBER_OF_PROCESSES>]
 ```
 - <BLUETOOTH_MAC_ADDRESS>: The Bluetooth MAC address of the target device (e.g., 00:11:22:33:44:55). Required.
@@ -38,7 +39,7 @@ python3 l2ping_flooder.py <BLUETOOTH_MAC_ADDRESS> [-p <NUMBER_OF_PROCESSES>]
 
 ## Example:
 
-```
+```bash
 python3 l2ping_flooder.py 00:11:22:33:44:55 -p 200
 ```
 This command will launch an l2ping flood attack against the Bluetooth MAC address 00:11:22:33:44:55 using 200 concurrent processes.
